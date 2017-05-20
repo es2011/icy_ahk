@@ -1,10 +1,13 @@
-Run, C:\games\icytower1.5\icytower15.exe, max
 SetKeyDelay, -1, 500
 
 ;Assumptions: only user profiles are guest and another, current profile is not guest
 ;need to install AutoHotKey
+;starts from gameover
+Sleep, 1000
+params := Object(1,"ESC",2,"ESC",3,"ESC")
+press(params)
 
-Sleep, 5000
+Sleep, 1000
 ; Go to profiles
 params := Object(1,"Down",2,"Down",3,"Enter",4,"Down",5,"Enter")
 press(params)
@@ -26,14 +29,15 @@ params := Object(1,"Up",2,"Enter",3,"icy",4,"Enter",5,"Enter",6,"Enter")
 press(params)
 
 ; start game
-params := Object(0,"Down",1,"Enter",2,"Up",3,"Up",4,"Enter",5,"Enter")
+params := Object(0,"Down",1,"Enter",2,"Up",3,"Up",4,"Enter")
+;params := Object(0,"Down",1,"Enter",2,"Up",3,"Up",4,"Enter",5,"Enter")
 press(params)
 
 ;end game
-Loop ,4{
-Sleep, 1000
-send, {ESC}
-}
+;Loop ,4{
+;Sleep, 1000
+;send, {ESC}
+;}
 
 press(params){
 
