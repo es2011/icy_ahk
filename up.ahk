@@ -1,2 +1,2 @@
-SetKeyDelay, -1, 200
+SetKeyDelay, -1, 100
 send, {right}{space}

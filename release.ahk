@@ -1,3 +1,3 @@
-SetKeyDelay, -1, 200
+SetKeyDelay, -1, 100
 send, {Right up}
 send, {Left up}
