@@ -25,7 +25,7 @@ params := Object(1,"Enter",2,"quick Down",3,"quick Down",4,"Del",5,"Left",6,"Ent
 press(params)
 
 ; create new icy profile
-params := Object(1,"Up",2,"Enter",3,"icy",4,"Enter",5,"Enter",6,"Enter")
+params := Object(1,"Up",2,"Enter",3,"icy",4,"Enter",5,"Enter",6,"Enter",7,"Enter")
 press(params)
 
 ; start game
